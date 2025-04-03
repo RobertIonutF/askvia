@@ -1,6 +1,6 @@
 export function Pricing() {
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-900">
+    <section id="pricing" className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Simple Pricing</h2>
         

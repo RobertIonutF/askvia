@@ -1,6 +1,6 @@
 export function UseCases() {
   return (
-    <section className="py-16">
+    <section id="use-cases" className="py-16">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-10">Perfect For</h2>
         
