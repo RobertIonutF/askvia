@@ -6,12 +6,14 @@ import { UseCases } from './UseCases';
 
 export function LandingPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col items-center">
       <Tagline />
-      <Hero />
-      <HowItWorks />
-      <UseCases />
-      <Pricing />
+      <div className="w-full max-w-7xl mx-auto">
+        <Hero />
+        <HowItWorks />
+        <UseCases />
+        <Pricing />
+      </div>
     </div>
   );
 } 

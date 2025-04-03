@@ -11,7 +11,7 @@ export function NavLinks({ className = '', onClick }: NavLinkProps) {
   ];
 
   return (
-    <ul className={`flex ${className}`}>
+    <ul className={`flex space-x-8 ${className}`}>
       {links.map((link) => (
         <li key={link.href}>
           <a 

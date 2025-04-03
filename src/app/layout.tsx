@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/providers/theme-provider";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -30,9 +31,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navigation />
-        <SmoothScroll />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navigation />
+          <SmoothScroll />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -3,6 +3,7 @@
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavLinks } from "./NavLinks";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export function MobileNav() {
   return (
@@ -25,10 +26,13 @@ export function MobileNav() {
               }
             }} 
           />
-          <div className="pt-6">
+          <div className="pt-6 flex flex-col space-y-4">
             <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-3 font-medium w-full">
               Create a Survey
             </button>
+            <div className="flex justify-center pt-2">
+              <ModeToggle />
+            </div>
           </div>
         </div>
       </SheetContent>
